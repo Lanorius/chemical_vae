@@ -1,6 +1,6 @@
 # My Master's Thesis: Drug-Target-Interaction (DTI) ChemVAE Fork
 
-The rights are reserved to: https://github.com/aspuru-guzik-group
+All rights are reserved to: https://github.com/aspuru-guzik-group
 
 The following two repos were also part of my project. All three are required to repeat my steps:\
 [Prediction Of Binding Affinity](https://github.com/Lanorius/binding-affinity-prediction): prediction of DTI\
