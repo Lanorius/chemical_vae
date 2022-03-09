@@ -1,32 +1,29 @@
 # My Master's Thesis: Drug-Target-Interaction (DTI) ChemVAE Fork
 
+The rights are reserved to: https://github.com/aspuru-guzik-group
 
-This repo compliments the DTI prediction algorithm in:
-[Data Creator](https://github.com/Lanorius/binding-affinity-prediction): Predicits the datasets that are created here.
+The following two repos were also part of my project. All three are required to repeat my steps:\
+[Prediction Of Binding Affinity](https://github.com/Lanorius/binding-affinity-prediction): prediction of DTI\
+[Data Creator](https://github.com/Lanorius/dataset_creation): filtering and clustering of DTI dataset
 
-#### How to use the Data Cleaner
+Additionally PortT5 are needed:\
+[Prot T5] (https://github.com/agemagician/ProtTrans): encoding of the proteins
+
+#### How to use this ChemVAE Fork
 1. Clone this repo
-2. Download the MayaChemTools collection, and place the folder next to the folder of this repo (or you can specify another location in the config file)
-3. Install CD-Hit
-4. Ensure the requirements are met, we found that the best way is to create an RDKit environment and install the other requirements to it
-5. check in the src/config.ini file if all files are chosen correctly, including the raw data file
-6. run by using "python main.py"
+2. Ensure the requirements are met
+3. Copy the drug and matrix file created by the Data Creator
+4. Run by using "python run_chemvae_encoder_2.py"
 
-#### Databases
+There are two more encoder scripts:
+"python run_chemvae_encoder.py" This script only encodes the compounds but does not update the matrix.
+"python run_chemvae_encoder_3.py" This script requires the protein file from the Data Creator in  additionally to the other two files. 
+It can clean the matrix of unused proteins. The Data Creator is already covering this step. 
 
-[BindingDB](https://www.bindingdb.org/bind/index.jsp): Database of measured binding affinity
 
-#### RDKit
 
-[RDKit](https://www.rdkit.org/): Open-Source Cheminformatics Software, install using the information in the following link https://www.rdkit.org/docs/Install.html
 
-#### RDKit additional scripts
 
-[MayaChemTools](http://www.mayachemtools.org/): collection of Perl and Python scripts, modules, and classes to support a variety of day-to-day computational discovery needs
-
-#### CD-Hit
-
-[CD-Hit](http://cd-hit.org): a widely used program for clustering and comparing protein or nucleotide sequences
 
 
 
