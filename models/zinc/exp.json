@@ -1,7 +1,7 @@
 {
   "name": "zinc",
-  "MAX_LEN": 120,
-  "data_file": "250k_rndm_zinc_drugs_clean_3.csv",
+  "MAX_LEN": 1000,
+  "data_file": "unclustered_compounds_Kd.csv",
   "char_file": "zinc.json",
   "encoder_weights_file": "zinc_encoder.h5",
   "decoder_weights_file": "zinc_decoder.h5",

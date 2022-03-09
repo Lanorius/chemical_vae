@@ -58,8 +58,8 @@ class VAEUtils(object):
         print('Standarization: estimating mu and std values ...', end='')
         # sample Z space
 
-        smiles = self.random_molecules(size=5000)  # this was at 50000
-        batch = 250  # this was at 2500
+        smiles = self.random_molecules(size=50000)
+        batch = 2500
         Z = np.zeros((len(smiles), self.params['hidden_dim']))
         for chunk in self.chunks(list(range(len(smiles))), batch):
             sub_smiles = [smiles[i] for i in chunk]
@@ -263,7 +263,6 @@ class VAEUtils(object):
             smiles = mu.smiles_to_hot_filter(smiles, self.char_indices)
 
         p = self.params
-        #print(p['MAX_LEN'], p['PADDING'], self.char_indices, p['NCHARS'])
         z = mu.smiles_to_hot(smiles,
                              p['MAX_LEN'],
                              p['PADDING'],

@@ -6,7 +6,7 @@ channels:
 dependencies:
   - keras=2.0.6
   - tensorflow
-  - h5py
+  - h5py=2.10.0
   - hdf5
   - pandas
   - python=3
