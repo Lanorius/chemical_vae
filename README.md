@@ -6,8 +6,8 @@ The following two repos were also part of my project. All three are required to 
 [Prediction Of Binding Affinity](https://github.com/Lanorius/binding-affinity-prediction): prediction of DTI\
 [Data Creator](https://github.com/Lanorius/dataset_creation): filtering and clustering of DTI dataset
 
-Additionally PortT5 are needed:\
-[Prot T5] (https://github.com/agemagician/ProtTrans): encoding of the proteins
+Additionally, PortT5 is needed:\
+[ProtT5] (https://github.com/agemagician/ProtTrans): encoding of the proteins
 
 #### How to use this ChemVAE Fork
 1. Clone this repo
